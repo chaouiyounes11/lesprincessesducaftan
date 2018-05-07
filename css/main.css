@@ -108,9 +108,10 @@ textarea {
   display: flex;
   background-attachment: fixed;
   flex-wrap: wrap;
+  align-content: space-between;
 }
 
-#backgroundPrincipal ul {
+#backgroundPrincipal nav {
   width: 100%;
   display: flex;
   padding: 0px;
@@ -121,23 +122,171 @@ textarea {
   text-shadow: 4px 4px 4px black;
 }
 
+#backgroundPrincipal nav a {
+  font-size: 20px;
+  color: white
+}
+
+#backgroundPrincipal nav a:hover {
+  color: pink;
+}
+
 #backgroundPrincipal h1 {
   margin: 0px;
   color: white;
   font-weight: lighter;
   text-shadow: 4px 4px 4px black;
-  font-size: 40px;
+  font-size: 60px;
   width: 100%;
   text-align: center;
 }
 
-section h2 {
-  text-align: center;
-  margin: 3% 0%;
-  font-weight: lighter;
-  font-size: 30px;
+#backgroundPrincipal a {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  font-size: 38px;
+  color: pink;
+  text-shadow: 3px 3px 3px black;
 }
 
+#backgroundPrincipal a:hover {
+  text-decoration: none;
+  color: white;
+  transition: .5s;
+}
+
+
+/*SLIDERS*/
+
+.lareference {
+  margin: 0%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-content: space-around;
+  flex-wrap: wrap;
+}
+
+#references h3 {
+  color: pink;
+  display: block;
+  background-color: white;
+  text-align: center;
+  text-shadow: 1px 1px 1px black;
+  font-size: 30px;
+  text-align: center;
+  margin: 0px;
+}
+
+.carousel-inner {
+  display: flex;
+  align-items: center;
+}
+
+.carousel-item {
+  margin: auto;
+  height: 60vh;
+  text-align: center;
+  justify-content: center;
+  color: white;
+  font-style: oblique;
+  background-color: white;
+}
+
+.carousel-item figure {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0px;
+  width: 22%;
+  height: 357px;
+}
+
+.carousel-item figure img {
+  width: 100%;
+  height: 357px;
+}
+
+.boxing {
+  box-shadow: 1px 1px 1px black;
+}
+
+.carousel-indicators .active {
+  background-color: pink;
+  box-shadow: 1px 1px 1px black;
+}
+
+#carouselExampleIndicators {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.fa-chevron-left, .fa-chevron-right {
+  margin-left: 5%;
+  font-size: 25px;
+  color: pink;
+  text-shadow: 2px 2px 2px black;
+}
+
+.fa-chevron-right {
+  margin-right: 5%;
+}
+
+
+/*PRESENTATION*/
+
+#presentation {
+  display: flex;
+  margin: 5% 0% 0% 0%;
+}
+
+#presentation figure {
+  width: 50%;
+  margin: 5% 0% 0% 0%;
+  height: 300px;
+}
+
+#presentation figure img {
+  width: 100%;
+  height: 600px;
+}
+
+#presentation div {
+  width: 50%;
+}
+
+#presentation div h3 {
+  text-align: center;
+}
+
+#presentation div p {
+  padding: 3%;
+}
+
+#pictures {
+  display: flex;
+}
+
+#pictures figure {
+  margin: 0px;
+  width: 20%;
+  height: 300px;
+}
+
+#pictures figure img {
+  width: 100%;
+  height: 400px;
+}
+
+#pictures figure:hover img {
+  filter: grayscale(100%);
+}
 /* ==========================================================================
    Helper classes
    ========================================================================== */
